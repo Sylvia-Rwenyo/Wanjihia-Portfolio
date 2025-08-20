@@ -9699,3 +9699,12 @@ textarea.form-control {
 footer .nav-link{
   padding-left: 0;
 }
+@media (max-width: 991.98px) {
+  #home-section .one-forth {
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 50%; /* push text to half the height */
+    transform: translateY(-50%); /* adjust so it's centered in bottom half */
+  }
+}
+
