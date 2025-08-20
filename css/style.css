@@ -9703,8 +9703,8 @@ footer .nav-link{
   #home-section .one-forth {
     justify-content: center;
     align-items: flex-start;
-    padding-top: 50%; /* push text to half the height */
-    transform: translateY(-50%); /* adjust so it's centered in bottom half */
+    padding-top: 75%; /* push text to half the height */
+    transform: translateY(-20%); /* adjust so it's centered in bottom half */
   }
 }
 
