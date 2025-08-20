@@ -9,9 +9,9 @@
     <!-- Open Graph (for WhatsApp, LinkedIn, Facebook, etc.) -->
     <meta property="og:title" content="Wanjiku Wanjihia | Student Counselling Psychologist">
     <meta property="og:description" content="Available for consultation.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://website.com">
-    <meta property="og:image" content="https://website.com/images/pfp.png">
+    <meta property="og:type" content="https://wanjihia-portfolio.vercel.app/">
+    <meta property="og:url" content="https://wanjihia-portfolio.vercel.app/">
+    <meta property="og:image" content="https://wanjihia-portfolio.vercel.app/images/pfp.png">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -40,7 +40,10 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Wanjiku</a>
+	      <a class="navbar-brand d-flex align-items-center" href="index.html" >
+          <canvas id="dotlottie-canvas" style="width: 30px; height:30px;"></canvas>
+          Wanjiku
+        </a>
 	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
@@ -82,7 +85,7 @@
 	      	<div class="overlay"></div>
 	        <div class="container">
 	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/pfp.png);">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/pfp.png);" alt="profile picture of Wanjiku Wanjihia">
 	          		<div class="overlay"></div>
 	          	</div>
 		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
@@ -105,7 +108,7 @@
     			<div class="col-md-6 col-lg-5 d-flex">
     				<div class="img-about img d-flex align-items-stretch">
     					<div class="overlay"></div>
-	    				<div class="img d-flex align-self-stretch align-items-center" style="background-image:url(images/pfp.png);">
+	    				<div class="img d-flex align-self-stretch align-items-center" style="background-image:url(images/pfp.png);" alt="profile picture of Wanjiku Wanjihia">
 	    				</div>
     				</div>
     			</div>
@@ -125,7 +128,11 @@
 		        </div>
 	          <div class="counter-wrap ftco-animate d-flex mt-md-3">
               <div class="text">
-                <p><a href="https://drive.google.com/file/d/1PXrNrUPjozhkbRQClk4UJMXlXCClMSIY/view?usp=drivesdk" target="_blank" class="btn btn-primary py-3 px-3">Download CV</a></p>
+                <p>
+                  <a href="#resume-section" target="_blank" class="btn btn-primary d-flex align-items-center justify-content-center gap-2 py-3 px-3">
+                    <span>View Resume</span>
+                  </a>
+                </p>
               </div>
 	          </div>
 	        </div>
@@ -242,7 +249,11 @@
     <section class="ftco-section ftco-hireme margin-top">
 			<div class="container">
 				<div class="row justify-content-center">
-					<div class="col-md-7 ftco-animate text-center">
+          <div class="col-md-4 ftco-animate align-items-center">
+            <!-- Canvas element where the animation will be rendered -->
+            <canvas id="dotlottie2-canvas" style="width: 300px; height:300px;"></canvas>
+          </div>
+					<div class="col-md-7 ftco-animate text-left" style="margin-left: 5%;">
 						<h2>I'm <b style="color: white">Available</b> for consultation</h2>
 						<p>Wanjiku Wanjihia, a Student Counselling Psychologist.</p>
 						<a href="mailto:wanjikuwanjihia6@gmail.com" class="btn btn-white btn-outline-white py-3 px-4">Contact me</a>
@@ -317,7 +328,7 @@
   
 
   <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#845ec2"/></svg></div>
 
 
   <script src="js/jquery.min.js"></script>
@@ -334,6 +345,23 @@
   <script src="js/scrollax.min.js"></script>
   
   <script src="js/main.js"></script>
-    
+   <script type="module">
+  import { DotLottie } from "https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web/+esm";
+
+  //  animation
+  new DotLottie({
+    autoplay: true,
+    loop: true,
+    canvas: document.getElementById("dotlottie-canvas"),
+    src: "https://lottie.host/4db68bbd-31f6-4cd8-84eb-189de081159a/IGmMCqhzpt.lottie"
+  });
+  new DotLottie({
+    autoplay: true,
+    loop: true,
+    canvas: document.getElementById("dotlottie2-canvas"),
+    src: "https://lottie.host/4db68bbd-31f6-4cd8-84eb-189de081159a/IGmMCqhzpt.lottie"
+  });
+</script>
+
   </body>
 </html>
